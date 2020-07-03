@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import {PrimaryButton, SecondaryButton, TertiaryButton} from './components/Buttons';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const App = () => {
+    return (
+    <div>
+        <PrimaryButton onClick={() => console.log('consoles hello world!')}>PrimaryButton</PrimaryButton>
+        <SecondaryButton>Secondary Button</SecondaryButton>
+        <TertiaryButton>Tertiary Button</TertiaryButton>
+        </div>
+        )
+    }
+
+ReactDOM.render(<App />, document.querySelector('#root'));
