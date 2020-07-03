@@ -14,9 +14,11 @@ export const GlobalStyles = createGlobalStyle`
     body {
         margin: 0;
         font-family: ${primaryFont};
+
     }
     main {
         width: 90%;
         margin: 0 auto;
+        padding: 15px;
     }
 `;

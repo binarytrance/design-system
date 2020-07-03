@@ -5,14 +5,14 @@ import { PrimaryButton, SecondaryButton, TertiaryButton } from './styles/compone
 import { GlobalStyles } from './styles/utils/Global';
 const App = () => {
   return (
-    <div>
-      <PrimaryButton onClick={() => console.log('consoles hello world!')}>
+    <main>
+      <PrimaryButton disabled onClick={() => console.log('consoles hello world!')}>
         PrimaryButton
       </PrimaryButton>
-      <SecondaryButton>Secondary Button</SecondaryButton>
-      <TertiaryButton>Tertiary Button</TertiaryButton>
+      <SecondaryButton disabled>Secondary Button</SecondaryButton>
+      <TertiaryButton disabled>Tertiary Button</TertiaryButton>
       <GlobalStyles />
-    </div>
+    </main>
   );
 };
 
