@@ -6,6 +6,7 @@ import { PrimaryButton, SecondaryButton, TertiaryButton } from './styles/compone
 
 const App = () => {
   const [useDarkTheme, setUseDarkTheme] = useState(false);
+  console.log(theme.status.successColor);
   return (
     <ThemeProvider theme={useDarkTheme ? darkTheme : theme}>
       <button
