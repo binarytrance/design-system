@@ -102,7 +102,7 @@ export const Button = styled.button`
       width: calc(100% + 20px);
       height: calc(100% + 20px);
       left: -10px;
-      top: -10px;
+      top: -10px;bvggggggggggggggggggg,gggggggggggggggggggggg,gg
     } */
   }
   &:active {
@@ -120,7 +120,7 @@ export const Button = styled.button`
 `;
 export const PrimaryButton = styled(Button)`
   background-color: ${props => props.theme.primaryColor};
-  color: #fff;
+  color: ${props => props.theme.textColorOnPrimary};
   border: 0;
   &:disabled {
     background-color: ${props => props.theme.disabledColor};
