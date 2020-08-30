@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { GlobalStyles, theme, darkTheme } from './styles/utils';
 import { ThemeProvider } from 'styled-components';
 import ReactDOM from 'react-dom';
-import { PrimaryButton, SecondaryButton, TertiaryButton } from './styles/components/Buttons';
+// import { PrimaryButton, SecondaryButton, TertiaryButton } from './styles/components/Buttons';
+import { SignUpModal } from './styles/components/Modal';
 
 const App = () => {
   const [useDarkTheme, setUseDarkTheme] = useState(false);
@@ -31,7 +32,7 @@ const App = () => {
           justifyContent: 'space-around'
         }}
       >
-        <PrimaryButton
+        {/* <PrimaryButton
           modifiers={['primaryButtonWarning']}
           onClick={() => console.log('consoles hello world!')}
         >
@@ -40,7 +41,8 @@ const App = () => {
         <SecondaryButton modifiers={['large', 'success', 'secondaryButtonSuccess']}>
           Secondary Button
         </SecondaryButton>
-        <TertiaryButton modifiers='small'>Tertiary Button</TertiaryButton>
+        <TertiaryButton modifiers='small'>Tertiary Button</TertiaryButton> */}
+        <SignUpModal />
       </div>
       <GlobalStyles />
     </ThemeProvider>
