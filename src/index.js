@@ -7,6 +7,7 @@ import { SignUpModal } from './styles/components/Modal';
 
 const App = () => {
   const [useDarkTheme, setUseDarkTheme] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   console.log(theme.status.successColor);
   return (
     <ThemeProvider theme={useDarkTheme ? darkTheme : theme}>
@@ -21,6 +22,12 @@ const App = () => {
         onClick={() => setUseDarkTheme(false)}
       >
         Default Theme
+      </button>
+      <button
+        style={{ margin: '10px 20px', padding: '8px', background: 'none' }}
+        onClick={() => setShowModal(true)}
+      >
+        Show Modal
       </button>
       <div
         style={{
@@ -42,7 +49,7 @@ const App = () => {
           Secondary Button
         </SecondaryButton>
         <TertiaryButton modifiers='small'>Tertiary Button</TertiaryButton> */}
-        <SignUpModal />
+        <SignUpModal showModal={showModal} setShowModal={setShowModal} />
       </div>
       <GlobalStyles />
     </ThemeProvider>
