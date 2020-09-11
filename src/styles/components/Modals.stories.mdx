@@ -1,0 +1,25 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { withKnobs, boolean } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
+import { SignUpModal } from './Modal';
+
+<Meta title='Design System|Modals' component={SignUpModal} />
+
+# Modals
+
+Modals are used to show additional data as an overlay element.
+
+## Usage
+
+Clickin on apt element shows a modal
+
+## Sign Up Modal
+Sign up modal contains signup form
+
+<Preview withToolbar>
+  <Story name='Modal'>
+    <SignUpModal showModal={boolean('Show Modal', true)}>Hello world</SignUpModal>
+  </Story>
+</Preview>
+
+;
